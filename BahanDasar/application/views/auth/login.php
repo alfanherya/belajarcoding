@@ -1,48 +1,67 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Login</title>
 
-    <!-- Outer Row -->
-    <div class="row justify-content-center">
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/util.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 
-        <div class="col-lg-7">
+</head>
+<body>
 
-            <div class="card o-hidden border-0 shadow-lg my-5">
-                <div class="card-body p-0">
-                    <!-- Nested Row within Card Body -->
-                    <div class="row">
 
-                        <div class="col-lg">
-                            <div class="p-5">
-                                <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">login page !</h1>
+<!-- Outer Row -->
+<div class="container-login100" style="background-image: url('assets/img/earth.jpg');">
+
+    <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+
+                    <div class="col-lg">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h1 class="h1">LOGIN</h1>
+                            </div>
+
+                            <form class="user">
+                                <div class="form-group">
+                                    <input type="text" class="form_login" id="email" name="email" placeholder="Enter Email Address...">
                                 </div>
-                                <form class="user">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" id="email" name="email" placeholder="Enter Email Address...">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
-                                    </div>
+                                <div class="form-group">
+                                    <input type="password" class="form_login" id="password" name="password" placeholder="Password">
+                                </div>
 
-                                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                            </form>
+                            <hr>
+                            </br>
+                            <div class="container-login100-form-btn">
+                                <div class="wrap-login100-form-btn">
+                                    <div class="login100-form-bgbtn"></div>
+                                    <button class="login100-form-btn">
                                         Login
                                     </button>
-
-                                </form>
-                                <hr>
-                                <div class="text-center">
-                                    <a class="small" href="forgot-password.html">Forgot Password?</a>
                                 </div>
-                                <div class="text-center">
-                                    <a class="small" href="<?= base_url() ?>auth/registration">Create an Account!</a>
-                                </div>
+                            </div>
+                            </br>
+                            <div class="text-center">
+                                <a class="small" href="forgot-password.html">Forgot Password?</a> <span><a class="small" href="<?= base_url() ?>auth/registration">Create an Account!</a></span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
 
     </div>
 
 </div>
+
+</body>
+</html>
