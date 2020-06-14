@@ -24,7 +24,7 @@ public class BeerController {
         return new ResponseEntity<>(beerServices.getBeerById(beerId), HttpStatus.OK);
     }
     @PostMapping // ditambahkan post untuk membuat beer baru
-    public ResponseEntity handlePost(BeerDto beerDto){
+    public ResponseEntity handlePost(@RequestBody BeerDto beerDto){
         BeerDto savedDto = beerServices.saveNewBeer(beerDto);
         HttpHeaders headers = new HttpHeaders();
         headers.add("location", "/api/v1/beer/" + savedDto.getId().toString());
@@ -33,7 +33,7 @@ public class BeerController {
     }
 
     @PutMapping({"/{beerId}"})
-    public ResponseEntity handleUpdate(@PathVariable("beerId") UUID beerId, BeerDto beerDto){
+    public ResponseEntity handleUpdate(@PathVariable("beerId") UUID beerId, @RequestBody BeerDto beerDto){
         beerServices.updateBeer(beerId, beerDto);
         return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
