@@ -14,4 +14,11 @@ public class BeerServicesImpl implements BeerServices {
                 .beerStyle("Android pie")
                 .build();
     }
+
+    @Override
+    public BeerDto saveNewBeer(BeerDto beerDto){
+        return BeerDto.builder()
+                .id(UUID.randomUUID())
+                .build();
+    }
 }
