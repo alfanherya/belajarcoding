@@ -21,23 +21,22 @@
 
         <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
-            <div class="card o-hidden border-0 shadow-lg my-5">
+            
                 <div class="card-body p-0">
                     <!-- Nested Row within Card Body -->
                     <div class="row">
 
                         <div class="col-lg">
-                            <div class="p-5">
-                                <div class="text-center">
-                                    <h1 class="h1">LOGIN</h1>
+                                <div>
+                                    <h1 class="tulisan_login">LOGIN</h1>
                                 </div>
-
+                            <div class="p-5">
                                 <form class="user">
                                     <div class="form-group">
-                                        <input type="text" class="form_login" id="email" name="email" placeholder="Enter Email Address...">
+                                        <input type="text" class="form_login" id="email" name="email" placeholder="Enter Email">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form_login" id="password" name="password" placeholder="Password">
+                                        <input type="password" class="form_login" id="password" name="password" placeholder="Enter Password">
                                     </div>
 
                                 </form>
@@ -59,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
 
         </div>
 
